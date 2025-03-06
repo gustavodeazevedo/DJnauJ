@@ -15,33 +15,35 @@ function About() {
           <h1 className="text-5xl font-bold mb-8">Sobre DJ nauJ</h1>
 
           <div className="prose prose-invert mb-12">
-            <p className="text-xl text-gray-300"></p>
+            <p className="text-xl text-gray-300">
+              Desde suas primeiras apresentações, DJ nauJ se destacou pela
+              capacidade de criar atmosferas únicas. Sua missão é simples: criar
+              momentos que ficam gravados na memória de quem se entrega ao
+              verdadeiro funk de SP.
+            </p>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6">Musical Influences</h2>
+          <h2 className="text-3xl font-bold mb-6">Influencias Musicais</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-spotify-black/50 p-6 rounded-lg backdrop-blur-sm">
               <Disc className="h-8 w-8 text-spotify-green mb-4" />
-              <h3 className="text-xl font-bold mb-2">House Music</h3>
+              <h3 className="text-xl font-bold mb-2">Funk</h3>
               <p className="text-gray-300">
-                Deep, soulful beats that move both body and spirit, inspired by
-                Chicago house legends.
+                Batidas envolventes criadas e desenvolvidas pelo próprio nauJ.
               </p>
             </div>
             <div className="bg-spotify-black/50 p-6 rounded-lg backdrop-blur-sm">
               <Music className="h-8 w-8 text-spotify-green mb-4" />
-              <h3 className="text-xl font-bold mb-2">Techno</h3>
+              <h3 className="text-xl font-bold mb-2">Funk 150 BPM</h3>
               <p className="text-gray-300">
-                Raw, powerful rhythms drawing from Detroit's rich techno
-                heritage.
+                O ritmo acelerado que domina os bailes.
               </p>
             </div>
             <div className="bg-spotify-black/50 p-6 rounded-lg backdrop-blur-sm">
               <Headphones className="h-8 w-8 text-spotify-green mb-4" />
-              <h3 className="text-xl font-bold mb-2">Electronic</h3>
+              <h3 className="text-xl font-bold mb-2">Funk Remix</h3>
               <p className="text-gray-300">
-                Progressive and melodic elements that create immersive
-                soundscapes.
+                Versões eletrônicas e misturas que elevam o som ao próximo nível
               </p>
             </div>
           </div>

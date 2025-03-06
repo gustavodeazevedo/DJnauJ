@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Instagram, AlignJustify as Spotify } from "lucide-react";
+import { Instagram } from "lucide-react";
 import "../../src/index.css";
 
 function Home() {
@@ -35,7 +35,7 @@ function Home() {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="text-lg text-gray-300 mt-5 mb-8"
       >
-        Dj nauJ - o que toca e elas sentem!
+        Festas de comissão | Festas de aniversário | DJ Set
       </motion.p>
 
       <motion.div
@@ -59,8 +59,26 @@ function Home() {
           rel="noopener noreferrer"
           className="bg-spotify-green text-spotify-black px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-opacity-80 transition-all duration-200"
         >
-          <Spotify className="h-5 w-5" />
+          <img
+            src="https://img.icons8.com/ios/50/spotify--v1.png"
+            className="w-7"
+            alt="spotify"
+          />
           <span>Spotify</span>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@DJnauJ/featured"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-spotify-green text-spotify-black px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-opacity-80 transition-all duration-200"
+        >
+          <img
+            src="https://img.icons8.com/ios/50/youtube-play--v1.png"
+            alt="YouTube"
+            className="w-7"
+          />
+          <span>YouTube</span>
         </a>
       </motion.div>
     </div>
