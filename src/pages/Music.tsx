@@ -63,7 +63,7 @@ function Music() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {playlists.map((playlist) => (
                 <motion.div
                   key={playlist.id}
@@ -74,30 +74,30 @@ function Music() {
                 >
                   <div className="relative group">
                     <a
-                      href={playlist.spotifyLink} // Agora a referência ao link está corretamente configurada
+                      href={playlist.spotifyLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full aspect-square block" // Garantindo que o link ocupe o espaço completo
+                      className="w-full aspect-square block"
                     >
                       <img
                         src={playlist.image}
                         alt={playlist.title}
-                        className="w-full aspect-square object-cover"
+                        className="w-full aspect-square object-cover sm:h-[200px] md:h-[220px] lg:h-[250px]"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                        <button className="bg-spotify-green text-spotify-black p-4 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                          <Play className="h-6 w-6" />
+                        <button className="bg-spotify-green text-spotify-black p-3 sm:p-4 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                          <Play className="h-5 w-5 sm:h-6 sm:w-6" />
                         </button>
                       </div>
                     </a>
                   </div>
 
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold mb-1">{playlist.title}</h3>
-                    <p className="text-gray-300 text-sm mb-2">
+                  <div className="p-3 sm:p-4">
+                    <h3 className="text-lg sm:text-xl font-bold mb-1">{playlist.title}</h3>
+                    <p className="text-gray-300 text-xs sm:text-sm mb-2">
                       {playlist.description}
                     </p>
-                    <div className="flex items-center gap-2 text-gray-400 text-sm">
+                    <div className="flex items-center gap-2 text-gray-400 text-xs sm:text-sm">
                       <Clock className="h-4 w-4" />
                       <span>{playlist.duration}</span>
                     </div>
